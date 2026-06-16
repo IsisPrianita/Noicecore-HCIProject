@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  color: #ff6600;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.hero_h2 {
+  color: #ccc;
+}
+
+/* Hero Section Home Page */
+.hero {
+  background: url("../images/hero.jpg") no-repeat center/cover;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
+
+/* Filter Dropdown */
+label {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Top Products Home Page */
+.top-products .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.top-products .product-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-products .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.top-products .product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.top-products .product-card h3 {
+  font-size: 0.85rem;
+  color: #222;
+  margin: 10px 0 4px;
+}
+
+.top-products .rating {
+  color: #f5a623;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.top-products .price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.top-products a {
+  text-align: center;
+}
+
+/* Promotion Home Page */
+.promotions {
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.promotions .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.promo-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.promo-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.promo-caption {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+.btn.btn-promo {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-promo:hover {
+  background-color: #444;
+}
+
+/* Product Page */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 10px 0 4px;
+}
+
+.rating {
+  color: #f5a623;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* Deals Page */
+.hero-deals {
+  background: url("../images/membership.jpg") no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero-deals h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero-deals p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.deals-list {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+.deal-card {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.deal-card h4 {
+  color: #ff6600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.deal-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* About Page */
+.about-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-intro h2 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.about-intro p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h3 {
+  font-size: 1.4rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-features {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-features li {
+  margin-bottom: 10px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.about-features li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
+/* Forms Validation */
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+}
+
+form button {
+  width: 100%;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
